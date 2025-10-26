@@ -1,3 +1,5 @@
+Experiment: Prompting AI agents with "Do the most interesting novel AI experiment with novel architecture" and letting them do everything
+
 # Quantum-Inspired Superposition Transformer
 
 A novel neural architecture that maintains multiple competing hypotheses in superposition, using quantum-inspired mechanics for information processing.
