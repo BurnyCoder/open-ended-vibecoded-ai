@@ -1,6 +1,6 @@
-Experiment: Prompting AI agents with "Do the most interesting novel AI experiment with novel architecture" and letting them do everything
-
 # Quantum-Inspired Superposition Transformer
+
+> **Meta-Experiment**: This project was created by prompting an AI agent with _"Do the most interesting novel AI experiment with novel architecture"_ and letting it autonomously design, implement, and document the entire system from scratch—including architecture design, implementation, experiments, visualizations, and this documentation.
 
 A novel neural architecture that maintains multiple competing hypotheses in superposition, using quantum-inspired mechanics for information processing.
 
@@ -89,15 +89,19 @@ Shows stable learning dynamics:
 ### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/BurnyCoder/quantum-superposition-transformer.git
+cd quantum-superposition-transformer
+
 # Create virtual environment
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install torch matplotlib numpy
+pip install -r requirements.txt
 ```
 
-### Run Experiments
+### Run Full Experiments
 
 ```bash
 python quantum_superposition_transformer.py
@@ -112,6 +116,29 @@ Output files:
 - `interference_patterns.png` - Collapse weights through layers
 - `hypothesis_divergence.png` - Hypothesis representation distances
 - `training_curve.png` - Learning dynamics
+
+### Basic Usage Example
+
+```bash
+python examples/basic_usage.py
+```
+
+For custom usage:
+
+```python
+from quantum_superposition_transformer import QuantumSuperpositionTransformer
+
+# Create model
+model = QuantumSuperpositionTransformer(
+    vocab_size=100,
+    d_model=128,
+    n_hypotheses=4,
+    n_layers=3
+)
+
+# Forward pass
+logits, collapse_weights = model(input_tokens)
+```
 
 ## 🏗️ Architecture Details
 
