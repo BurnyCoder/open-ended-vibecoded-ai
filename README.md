@@ -1,6 +1,6 @@
-# Quantum-Inspired Superposition Transformer
-
 > **Meta-Experiment**: This project was created by prompting an AI agent with _"Do the most interesting novel AI experiment with novel architecture"_ and letting it autonomously design, implement, and document the entire system from scratch—including architecture design, implementation, experiments, visualizations, and this documentation.
+
+# Quantum-Inspired Superposition Transformer
 
 A novel neural architecture that maintains multiple competing hypotheses in superposition, using quantum-inspired mechanics for information processing.
 
