@@ -117,14 +117,26 @@ Output files:
 - `hypothesis_divergence.png` - Hypothesis representation distances
 - `training_curve.png` - Learning dynamics
 
-### Basic Usage Example
+### Usage Examples
 
+**Basic Usage** - Simple API demonstration:
 ```bash
 python examples/basic_usage.py
 ```
 
-For custom usage:
+**Advanced Analysis** - Deep dive into hypothesis dynamics:
+```bash
+python examples/advanced_analysis.py
+```
 
+**Interactive Demo** - Explore different sequence patterns:
+```bash
+python examples/interactive_demo.py
+# Or quick comparison mode:
+python examples/interactive_demo.py --quick
+```
+
+**Custom Usage**:
 ```python
 from quantum_superposition_transformer import QuantumSuperpositionTransformer
 
@@ -138,6 +150,10 @@ model = QuantumSuperpositionTransformer(
 
 # Forward pass
 logits, collapse_weights = model(input_tokens)
+
+# Analyze hypothesis collapse
+for layer_idx, weights in enumerate(collapse_weights):
+    print(f"Layer {layer_idx}: {weights.shape}")
 ```
 
 ## 🏗️ Architecture Details
